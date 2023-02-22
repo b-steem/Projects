@@ -1,0 +1,297 @@
+body {
+  color: white;
+  font-family: sans-serif;
+  background-color: black;
+  margin: 0;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 14px;
+  text-align: center;
+}
+
+p {
+  font-size: 10px;
+  text-align: justify;
+}
+
+ul {
+  list-style: none;
+}
+
+/*sets display veiw height*/
+.container {
+  height: 100vh;
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+/*centers element inside .container*/
+.center {
+  position: absolute;
+  width: 80%;
+  top: 55%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/*centers the introduction title and sets the position*/
+#intro-text {
+  text-align: center;
+  top: 50%;
+}
+
+/*sets the background for the introduction */
+#intro-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.7)),url('images/profile_img.jpg');
+  background-position: top; /* always show the top of the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size:cover; /* Resize the background image to cover the entire container */
+}
+
+/* Changes position of about-header element*/
+#about {
+  text-align: center;
+  top: 25%;
+}
+
+/* Sets the background for the about section*/
+#about-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.45)),url('images/mountain_img.jpg');
+  background-position: center; /* always show the top of the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+/* Changes position of exit button*/
+#exit-contact {
+  font-size: 30px;
+  right: 0;
+  position: absolute;
+}
+
+/* Makes changes to the exit button when hovered over*/
+#exit-contact:hover {
+  background-color: red;
+  font-size: 35px;
+}
+
+/* Sets the attibutes to the contact popup*/
+#contact-info {
+  size: 60px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  position: fixed;
+  display: none;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#linkedn {
+  color: black;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container needed to position the dropdown content */
+.dropdown {
+  position: fixed;
+  top: 0;
+  display: inline-block;
+}
+
+/* Dropdown Content positioning and display */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Decorates the links inside the dropdown  */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: rgb(79, 143, 136);}
+
+/* Stops the user from scrolling when javascript file deploys*/
+.stop-scrolling {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+@media screen and (min-width: 320px) {
+  a {
+    font-size: 10px;
+  }
+
+  li , #linkedin{
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  .dropbtn {
+    font-size: 15px;
+  }
+  #contact {
+    top: 40px;
+  }
+
+  #contact-info {
+    height: 200px;
+    width: 100%;
+  }
+  
+}
+
+@media screen and (min-width: 480px) {
+  a {
+    font-size: 15px;
+  }
+
+  li , #linkedin{
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .dropbtn {
+    font-size: 15px;
+  }
+  #contact {
+    top: 40px;
+  }
+
+  #contact-info {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 55px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  a {
+    font-size: 18px;
+  }
+
+  .dropbtn {
+    font-size: 20px;
+  }
+
+
+}
+
+
+@media screen and (min-width: 1024px) {
+  a {
+    font-size: 20px;
+  }
+
+  li , #linkedin{
+    font-size: 30px;
+  }
+  h1 {
+    font-size: 75px;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  .dropbtn {
+    font-size: 25px;
+  }
+  #contact {
+    top: 110px;
+  }
+
+  #contact-info {
+    height: 400px;
+    width: 600px;
+  }
+  
+}
+
+@media screen and (min-width: 1200px) {
+  a {
+    font-size: 25px;
+  }
+
+  h1 {
+    font-size: 90px;
+  }
+
+  h2 {
+    font-size: 80px;
+  }
+
+  p {
+    font-size: 40px;
+  }
+
+  .dropbtn {
+    font-size: 30px;
+  }
+}
